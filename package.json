@@ -18,7 +18,6 @@
     "url": "http://github.com/elangelo/node-exif.git"
   },
   "dependencies": {
-    "binary-reader": "*",
-    "hex": "0.0.1"
+    "binary-reader": "*"
   }
 }
