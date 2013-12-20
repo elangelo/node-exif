@@ -19,5 +19,8 @@
   },
   "dependencies": {
     "binary-reader": "*"
+  },
+  "scripts": {
+    "test": "node test/index.js"
   }
 }

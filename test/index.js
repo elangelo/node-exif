@@ -1,6 +1,6 @@
 ﻿var exif = require('..').ExifImage;
 
-new exif( {image: './testfile/sanyo-vpcg250.jpg'}, function (error, image) {
+new exif( {image: './test/testfile/sanyo-vpcg250.jpg'}, function (error, image) {
     if (error) 
     { 
         console.error('error occurred: ' + error);
@@ -9,6 +9,9 @@ new exif( {image: './testfile/sanyo-vpcg250.jpg'}, function (error, image) {
     {
         if (image)
         {
+            console.log();
+            console.log('*** image info of sanyo-vpcg250.jpg ***');
+
             console.log('---=== ifd0 ===---');
             console.log(image.image);
 
@@ -26,11 +29,14 @@ new exif( {image: './testfile/sanyo-vpcg250.jpg'}, function (error, image) {
            
             console.log('---=== makernotes ===---');
             console.log(image.makernote);
+
+            console.log('---=== thumbnail ===---');
+            console.log(image.thumbnail);
         }
     }
 });
 
-new exif( {image: './testfile/fujifilm-finepix40i.jpg'}, function (error, image) {
+new exif( {image: './test/testfile/fujifilm-finepix40i.jpg'}, function (error, image) {
     if (error) 
     { 
         console.error('error occurred: ' + error);
@@ -39,6 +45,9 @@ new exif( {image: './testfile/fujifilm-finepix40i.jpg'}, function (error, image)
     {
         if (image)
         {
+            console.log();
+            console.log('*** image info of fujifilm-finepix20i.jpg ***');
+
             console.log('---=== ifd0 ===---');
             console.log(image.image);
 
@@ -56,6 +65,9 @@ new exif( {image: './testfile/fujifilm-finepix40i.jpg'}, function (error, image)
            
             console.log('---=== makernotes ===---');
             console.log(image.makernote);
+
+            console.log('---=== thumbnail ===---');
+            console.log(image.thumbnail);
         }
     }
 });
